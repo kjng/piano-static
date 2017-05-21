@@ -1,9 +1,7 @@
 language: generic
 deploy:
   provider: s3
-  access_key_id: AKIAJ4A6XQT7DRJ5RQDQ
-  secret_access_key:
-    secure: WI3KyNVDYovYPTH/+JqoCKFwDnEieLBLbd1AV6b2bTzVIzITUBqTqzUREpnY6l0j07/TT6fi4lmEaRJJZUCBKC6cmRFL+Gov2nSsUZpba0E9s97+B2lRxns8HLAvOEfh0ibzImM8FSkRYoLaEDI/vhyCMBRCGtCT1Z6NVYKXWw9liN0WfOLkSARu7U6pzRFYL4k0yYQhahk/ny7BWCZ1+Duq1ntXlswQpDhPHKQ6y5Y+RSnRMGQBJjeQp1iPPpTn1X/gwYxmUj2kCBEHUAqMXT10doOTnURfWWXMFUJH/b4pghfxSqM2YMay/jQBZchCHZOhx9gh2vQ6jgaHoyhneoYZwduaihwEYEUXYbdcesWqWbC+RgNYIYNw+egsiPTs5oyzJDrb2ZzgqbLr58l/YHRHbJ/Wf2LNGNaYmCj9rVwI9Itpp6t4AcEV3+79CauAZdIum+bTc22MUwk3Q43euRK4HvfjHEQp+/vA74x8/95osFsZVt1SQob7HpUjGLdBcYaK85iIn2g2LLcJUq1U9u4rZ2oDgcfq3jf3S6zBG3oMHMrO/CL4f5MKPucpNyMmGZ5ZCFRZeIeX5uDCvitDrkfMyy9fyq1WYIFwpp3v4wOvsXpS3nnqxZI5I0cdhgo0xDvGcnchZ5UqXPgqD7sNXEiBoAEfKewlhJ7wlXEgi9s=
+  access_key_id: $ACCESS_KEY
+  secret_access_key: $SECRET_ACCESS_KEY
   bucket: kevinjang.com
-  on:
-    repo: kjng/piano-static
+  skip_cleanup: true
