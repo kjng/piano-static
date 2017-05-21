@@ -1,6 +1,5 @@
 language: generic
 deploy:
-  install: true
   provider: s3
   access_key_id: AKIAJ4A6XQT7DRJ5RQDQ
   secret_access_key:
